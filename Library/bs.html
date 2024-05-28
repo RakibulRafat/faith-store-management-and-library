@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .bookshelf {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .book {
+            width: 120px;
+            height: 180px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            text-align: center;
+            padding: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .book img {
+            max-width: 80px;
+            max-height: 120px;
+            margin-bottom: 10px;
+        }
+
+        .book-title {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Bookshelf</h1>
+    <div class="bookshelf">
+        <div class="book">
+            <img src="book1.jpg" alt="Book 1">
+            <div class="book-title">Book 1</div>
+            <div class="author">Author 1</div>
+        </div>
+        <div class="book">
+            <img src="book2.jpg" alt="Book 2">
+            <div class="book-title">Book 2</div>
+            <div class="author">Author 2</div>
+        </div>
+        <!-- Add more books as needed -->
+    </div>
+</body>
+</html>

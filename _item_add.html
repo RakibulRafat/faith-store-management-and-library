@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Add</title>
+    <script src="item_add.js"> </script>
+</head>
+<body>
+         
+
+    <h2>Store Data</h2>
+    <form onsubmit="return validateForm()" action="added.html">
+
+        <input id="iname" type="text" placeholder="Item Title" required><br>
+
+        <select id="icg" required>
+            <option>IT Products</option>
+            <option>Therapy Equipment</option>
+            <option>Electronics</option>
+            <option>Tool Kit</option>
+            <option>Repaired Item</option>
+            <option>Medical Item</option>
+            <option>Asthema Item</option>
+            <option>Kitchen Item</option>
+            <option>Householder & Grecery</option>
+        </select><br>
+
+        <textarea id="ta" cols="60" rows="10" placeholder="Item Details" required></textarea><br>
+     
+        <label for="radio">Item Source</label><br>
+        <input type="radio" id="Purchased" name="Item Source" value="purchased" required>
+        <label for="purchased">Purchased</label><br>
+        <input type="radio" id="Gift" name="Item Source" value="Gift" required>
+        <label for="Gift">Gift</label><br>
+        <input type="radio" id="Homemade" name="Item Source" value="Homemade" required>
+        <label for="Homemade">Homemade</label><br>
+        <input type="radio" id="Others" name="Item Source" value="Others" required>
+        <label for="Others">Others</label><br>
+
+        <label for="checkbox">Active status</label><br>
+        <input type="checkbox" id="Option1" name="option1" value="Yes" required>
+        <label for="option1">Yes</label><br>
+        <input type="checkbox" id="option2" name="option2" value="No" required>
+        <label for="option2">No</label><br>
+
+        <label for="datetime-local">Validity Date</label>
+        <input type="datetime-local" required><br>
+
+        <label for="number" >Price</label>
+        <input id="prc" type="number" required><br>
+
+        <button type="submit" >Submit Item</button>
+
+
+
+ 
+    </form>
+</body>
+</html>

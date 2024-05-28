@@ -1,0 +1,30 @@
+body {
+    background-color: lightblue;
+  }
+
+  table, td {
+    border: 1px solid;
+  }  
+
+table {
+      height: 50%;
+      width: 80%;
+      background-color: gainsboro;
+      text-align: center;
+            
+}  
+tr{
+    height: 200px;
+}
+td{
+  color: cornsilk;
+}
+header{
+  background-color: aliceblue;
+}
+.rt{
+  text-align: right;
+}
+button{
+  color: green;
+}

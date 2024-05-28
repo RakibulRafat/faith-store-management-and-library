@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style><!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>#testimonials
+    {
+        width:200px;
+        height:200px;
+    }
+    .testimonial span
+    {
+        color:red;
+    }</style>
+</head>
+<body>
+    <div id="testimonials">
+
+        <div class="testimonial">
+            &quot;Text text text text text text text text text text text text text text text text text text text text text text text text text text text text &quot; - <span>Person</span>
+        </div>
+    
+        <div class="testimonial">
+            &quot;Text text text text text text text text text text text text text text text text text text text text text text text text text text text text &quot; - <span>Person</span>
+        </div>
+    
+        <div class="testimonial">
+            &quot;Text text text text text text text text text text text text text text text text text text text text text text text text text text text text &quot; - <span>Person</span>
+        </div>
+    
+        <div class="testimonial">
+            &quot;Text text text text text text text text text text text text text text text text text text text text text text text text text text text text &quot; - <span>Person</span>
+        </div>
+    
+    </div>
+    <script>function roll(){
+        var curr = 2;
+        var count = 4;
+        $('#testimonials .testimonial:nth-child(1)').show("slide", { direction: "down" }, 500);
+        setInterval(function(){
+            //console.log('C:'+curr);
+            $('#testimonials .testimonial').hide("slide", { direction: "up" }, 500);
+            $('#testimonials .testimonial:nth-child('+curr+')').delay(750).show("slide", { direction: "down" }, 500);
+            curr++;
+            if(curr == count+1){
+                // 5000 - 500 - 750 - 500 = 3250    =>    delay = 3000
+                $('#testimonials .testimonial:nth-child(4)').delay(3000).hide("slide", { direction: "up" }, 500);
+                curr = 1;
+            }
+        }, 5000);
+    }</script>
+</body>
+</html>
